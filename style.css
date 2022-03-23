@@ -1,0 +1,836 @@
+body {
+    background-color: rgb(189, 225, 235);
+}
+
+/* center container */
+.containerCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* center container */
+
+
+/* top container */
+.flex-container {
+    display: flex;
+    background-color: rgb(146, 191, 236);
+    border-radius: 10px;
+    height: 130px;
+    width: fit-content;
+}
+  
+.flex-container > div {
+    background-color: #ebdfdf;
+    margin: 4px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+div.topDiv {
+    width: 70px;
+    margin: 10px;
+}
+
+div.topDivMoney {
+    width: 70px;
+    margin: 10px;
+}
+
+.centeredTopText {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px rgb(84, 89, 90);
+}
+
+.container:hover {
+  background: linear-gradient(rgb(241, 223, 190), rgb(241, 202, 241));
+}
+
+.container:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* top container */
+
+/* bot container*/
+.quessingImage {
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(84, 89, 90);
+}
+
+#guesstext {
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -66px;
+}
+
+#input {
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: 727px;
+    background-color: rgb(226, 218, 218);
+    border-radius: 15px;
+    box-shadow: 0 15px #999;
+}
+
+.inputAndButton {
+    width: 200px;
+}
+
+#enterButton {
+    width: 207px;
+    height: 40px;
+    background: linear-gradient(orange, violet);
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#enterButton:hover {
+    background: linear-gradient(rgb(240, 209, 156), rgb(235, 170, 235));
+}
+
+#enterButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.inputAndButtonSubClass {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px rgb(84, 89, 90);
+}
+/* bot container*/
+
+
+
+/* putting top container and bottom together */
+.containerTopAndBot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.itemTopAndBot {
+    height: 40px;
+    margin-bottom: 10px;
+}
+/* putting top container and bottom together */
+
+
+/* main container*/
+
+.maincontainer {
+    min-height: 100vh; /* minimum height = screen height */
+    margin-top: 10px;
+    margin-left: -100px;
+    margin-right: -100px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(189, 225, 235), rgb(243, 221, 179), rgb(233, 193, 233), rgb(189, 225, 235));
+}
+
+/* main container*/
+
+
+
+
+
+/* Games Container */
+
+.wrapperBotGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin-top: 5px;
+    margin-bottom: -50px;
+}
+
+.overlay:hover {
+    opacity: 0.65;
+}
+  
+.BotGameText {
+    font-size: 27px;
+    font-family: Verdana;
+    font-weight:bold;
+    font-style: italic;
+    background-color:rgb(146, 191, 236);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Games Container */
+
+
+
+/* Donate Container */
+
+.cryptoAddressText {
+    display: flex;
+    height: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+.cryptoAddressTextitem {
+    height: 7px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+/* Coin CSS */
+.coin {
+  margin: -50px 0 0 -50px;
+  width: 100px;
+  height: 100px;
+  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  animation: coin 2s linear infinite;
+}
+
+.coin .front {
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.coin .back {
+  width: 100%;
+  height: 100%;
+  background: #f7941e;
+  border-radius: 50%;
+  transform: rotateY(180deg) translateZ(10px);
+  -webkit-transform: rotateY(180deg) translateZ(10px);
+  -ms-transform: rotateY(180deg) translateZ(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.coin .front_b {
+  width: 100%;
+  height: 100%;
+  background: #f7941e;
+  border-radius: 50%;
+  transform: translateZ(-1px);
+  -webkit-transform: translateZ(-1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.coin .back_b {
+  width: 100%;
+  height: 100%;
+  background: #f7941e;
+  border-radius: 50%;
+  transform: translateZ(-9px);
+  -webkit-transform: translateZ(-9px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.coin:before {
+  content: "";
+  margin-left: -5px;
+  width: 10px;
+  height: 100%;
+  background: #f7941e;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: rotateY(-90deg);
+  -webkit-transform-origin: 100% 50%;
+  transform: rotateY(-90deg);
+  transform-origin: 100% 50%;
+}
+
+.coin .front_b:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 10px solid #fbb041;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.coin .front_b:after {
+  content: "$";
+  padding: 12px 0 0 0;
+  width: 100%;
+  height: 100%;
+  font-size: 5em;
+  font-weight: bold;
+  color: #fbb041;
+  line-height: 1;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;  
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.coin .back:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 10px solid #fbb041;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.coin .back:after {
+  content: "100";
+  padding: 27px 0 0 0;
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+  font-weight: bold;
+  color: #fbb041;
+  line-height: 1;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -4;
+}
+
+@keyframes coin {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+/* Coin CSS */
+
+/* Donate Container */
+
+
+
+/* Memes Container */
+  
+.memeContainer {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+.memegallery {
+    display: grid;
+    margin: 1em 0;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+}
+  
+.memeFigure {
+    display: flex;
+    margin: 0;
+}
+
+.memeFigure:hover {
+  transform: scale(1.1); /* Equal to scaleX(0.7) scaleY(0.7) */
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.memeImg {
+    flex: 1;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+/* Memes Container */
+
+
+
+/* Facts Container */
+
+.factsContainer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 20px;
+  font-family: Arial;
+}
+
+.factsHeader {
+  font-family: "Arial Black", sans-serif;
+  font-size: 44px;
+  letter-spacing: -1px;
+  background: rgb(37,190,173);
+  background: radial-gradient(circle, rgba(37,190,173,0.3841737378545168) 35%, rgba(37,150,190,0) 71%);
+}
+
+.factsParagraph {
+  margin: 2rem 0;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.smallerFactsHeader {
+  font-family: "Arial Black", sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  padding-left: 17px;
+  padding-top: 10px;
+  font-weight:bold;
+  border-bottom: 1px solid black;
+}
+
+/* Facts Container */
+
+
+
+/* Jumping Game Container */
+
+.jumpingGameMain {
+  display: center;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 8px solid black;
+  border-top: 8px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+
+  margin-top: 160px;
+  width: 60%;
+
+  box-shadow: 0 0 0 100vmax rgba(0,0,0,0.6);
+}
+
+.jumpingGame {
+  width: 60%;
+  height: 200px;
+  margin: auto;
+}
+
+
+
+#jumpingCharacter {
+  width: 20px;
+  height: 50px;
+  background-color: red;
+  position:relative;
+  top: 150px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+#jumpingCharacterBlue {
+  width: 20px;
+  height: 50px;
+  background-color: rgb(17, 0, 255);
+  position:relative;
+  top: 150px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.topHead {
+
+  width: 5px;
+  height: 12px;
+  background-color: rgb(0, 0, 0);
+  position:absolute;
+  top: -12px;
+  left: 7px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+#left-eye {
+  background-color: #000000;
+  width: 12px;
+  height: 15px;
+  border-radius: 50px;
+  position: relative;
+  top: 9px;
+  left: 15px;
+}
+
+#right-eye {
+  right: 20px;
+  background-color: #000000;
+  width: 12px;
+  height: 15px;
+  border-radius: 50px;
+  position: relative;
+  top: -6px;
+  left: 2px;
+}
+
+#left-eye::before, #right-eye::before {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100px;
+  position: absolute;
+  top: 5px;
+  left: 7px
+}
+
+.mouth {
+  position: absolute;
+  background-color: #000000;
+  width: 21px;
+  height: 9px;
+  border-radius: 7px 7px 100px 100px;
+  top: 25px;
+  left: 4px;
+}
+
+.jumpingGameText {
+  font-size: 30px;
+  font-family: Verdana;
+  font-weight:bold;
+  text-align: center;
+  padding: 1rem;
+  max-width: 20%;
+  margin-left: 40%;
+}
+
+.jumpingAnimate {
+  animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+  0%{top: 150px;}
+  10%{top: 130px;}
+  20%{top: 110px;}
+  30%{top: 90px;}
+  40%{top: 70px;}
+  50%{top: 60px;}
+  60%{top: 70px;}
+  70%{top: 90px;}
+  75%{top: 110px;}
+  80%{top: 130px;}
+  90%{top: 140px}
+  100%{top: 150px;}
+}
+
+#jumpingBlock {
+  background-color: rgb(0, 0, 0);
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 130px;
+  left: 500px;
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0%{left: 550px}
+  100%{left: -140px}
+}
+
+/* Jumping Game Container */
+
+
+
+/* Shop Container */
+
+.shopContainer {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 0;
+}
+
+.shopItem {
+  flex-grow: 1; 
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  height: 170px;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1px;
+}
+
+.shopItem + .shopItem {
+  margin-left: 2%;
+}
+
+.shopItem:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.shopItem:active {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: translateY(6px);
+}
+
+.img_description {
+  position: absolute;
+  top: -23px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  text-shadow: yellow;
+  font-family: Verdana;
+  font-size: 22px;
+}
+
+#shopErrorTextContainer {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-top: 10px;
+  height: 70px;
+  width: 680px;
+}
+
+#shopErrorText {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: Verdana;
+  font-weight: bolder;
+}
+
+.shopErrorTextContainerAddShake {
+  animation:  shake 0.8s  ;
+}
+
+@keyframes shake{
+  0%{
+    transform: translateX(0)
+  }
+  25%{
+    transform: translateX(25px);
+  }
+    
+  50%{
+    transform: translateX(-25px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.getCoinsContainer {
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-top: 10px;
+  height: 70px;
+  width: 680px;
+  font-family: 'Nunito', Helvetica, Arial, sans-serif;
+}
+
+.toGameFromShopbutton {
+  transition: all ease 0.3s;
+  appearance: none;
+  cursor: pointer;
+  border: 2px solid var(--button-border-color);
+  background: var(--background);
+  color: hsl(0, 0%, 100%);
+  padding: 0.5em 1em;
+  border-radius: 0.35em;
+  font-size: 1.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  animation: borderColorAnimation 3s infinite alternate linear;
+}
+
+.toGameFromShopbutton::after {
+    display: block;
+    transition: all ease 0.01s;
+    position: absolute;
+    background: var(--background);
+    text-align: center;
+    width: 1.0em;
+    height: 1.0em;
+    border-radius: 1.0em;
+    font-size: 1.5em;
+    line-height: 1.0em;
+    font-weight: 400;
+    top: -0.5em;
+    right: -0.5em;
+    transform: translate(2px, -2px);
+}
+
+.toGameFromShopbutton:active {
+  animation-play-state: paused;
+  transform: translate(0px, -4px);
+  background: var(--button-border-color);
+  color: var(--background);
+  border-color: var(--button-border-color);
+}
+
+
+:root {
+  --background: hsl(240, 70%, 5%);
+  --button-border-color: hsl(160, 100%, 50%);
+}
+
+
+.getCoins_description {
+  font-family: Verdana;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  margin-top: 85px;
+}
+
+/* Shop Container */
+
+
+/* Falling Coin Container */
+
+#rainMoney {
+  display:block;
+  pointer-events:none;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+/* Falling Coin Container */
+
+
+
+/* index Container */
+
+.roboto {
+  width: 100%; /* or any custom size */
+  height: 100%; 
+  object-fit: contain;
+}
+
+.robotUpperText {
+  font-family: Verdana;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#indexContainer {
+  top: 140px;
+  margin: 90px auto;
+  width: 350px;
+  height: 390px;
+  position: relative;
+}
+
+#SpeechBubble {
+  position: absolute;
+  transform-origin: 0% 100%;
+  text-align: center;
+  background-color: #5a5a5a;
+  color: white;
+  border-radius: 10px;
+  width: 220px;
+  padding: 10px;
+  left: 290px;
+  top: -75px;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+
+#SpeechBubble::before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 5px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #5a5a5a transparent transparent #5a5a5a;
+  transform: rotate(10deg);
+}
+
+@keyframes expand-bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* index Container */
