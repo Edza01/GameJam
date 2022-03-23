@@ -1,3 +1,3 @@
 # GameJam
-not serious, just fun
+not serious, just fun <br>
 RUN FROM INDEX
